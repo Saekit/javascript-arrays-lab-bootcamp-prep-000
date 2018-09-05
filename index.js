@@ -19,4 +19,13 @@ function appendKitten(name) {
 }
 function prependKitten(name) {
   var newList = kittens.splice(0, 1, name);
+  return newList;
+}
+function removeLastKitten() {
+  var newList = kittens.slice(1,);
+  return newList;
+}
+function removeFirstKitten() {
+  var newList = kittens.slice(0, -1);
+  return newList;
 }
